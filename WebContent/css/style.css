@@ -10,6 +10,10 @@ body {
 	width: 1024px;
 	margin-left: auto;
 	margin-right: auto;
+	background-image: url('../img/background2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 nav ul {
@@ -58,11 +62,20 @@ div.contenedor {
 	width: 100%;
 }
 
-div.uno {
+div.introduce {
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	text-align: center;
 	background-color: #d3b3e8;
+}
+
+div.uno {
+	width: 100%;
+	height: 700px;
+	text-align: center;
+	background-image: url('../img/products_back.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 div.dos {
