@@ -1,24 +1,30 @@
 @CHARSET "ISO-8859-1";
 
 * {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Chau Philomene One', sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	width: 1024px;
+	width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url('../img/background2.jpg');
+	background-image: url('../img/background.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+
 nav ul {
-	padding-left: 62px;
-	padding-right: 62px;
+	padding-left: 40px;
+	padding-right: 40px;
 	list-style-type: none;
 	margin: 0;
 	overflow: hidden;
@@ -30,15 +36,15 @@ nav ul li {
 }
 
 nav ul li a {
+	font-size: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	display: block;
-	width: 180px;
+	width: 150px;
 	text-decoration: none;
-	color: #000;
+	color: rgb(255, 255, 255);
 	text-align: center;
 	text-decoration: none;
-	background-color: #C0C0C0;
 }
 
 nav ul li.logo {
@@ -47,63 +53,104 @@ nav ul li.logo {
 	text-align: center;
 	padding-top: 35px;
 	padding-bottom: 35px;
-	background-color: #8089F9;
+	color: rgb(255, 255, 255);
 }
 
-header div.header {
+header {
 	width: 100%;
 	display: block;
-	height: 500px;
-	background-color: #408080;
+	height: 600px;
 	margin-top: -90px;
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+}
+
+div.slogan {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 0px #000;
+	width: 350px;
+	height: 100px;
+	margin-left: 100px;
+	margin-top: 180px;
+	display: inline-block;
+}
+
+div.slogan h1 {
+	font-size: 50px;
+}
+
+div.slogan h2 {
+	font-size: 32px;
+	line-height: 20px;
 }
 
 div.contenedor {
 	width: 100%;
 }
 
-div.introduce {
+div.routes {
 	width: 100%;
-	height: 300px;
+	display: inline-block;
 	text-align: center;
-	background-color: #d3b3e8;
-}
-
-div.uno {
-	width: 100%;
-	height: 700px;
-	text-align: center;
-	background-image: url('../img/products_back.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 }
 
-div.dos {
-	float: left;
-	width: 512px;
+div.table {
+	margin-top: 40px;
+	display: table;
+	width: 100%;
+	display: table;
+}
+
+div.table>div {
+	display: table-row;
+}
+
+div.table>div>div {
+	display: table-cell;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+div.route {
+	width: 300px;
 	height: 400px;
-	background-color: #8c8cff;
+	background-color: blue;
 }
 
-div.tres {
-	float: left;
-	width: 512px;
-	height: 800px;
-	background-color: #ffc6c6;
+div.route div.img_route {
+	height: 240px;
 }
 
-div.cuatro {
-	margin-top: -400px;
-	float: left;
-	width: 512px;
-	height: 400px;
-	background-color: #d6d6d6;
-	float: left;
+div.route div.description_route {
+	background-color: white;
+	height: 160px;
+	color: rgba(153, 153, 153, 0.8);
+	text-align: justify;
+	padding: 15px;
+	padding-top: 5px;
+}
+
+div.route div.description_route p.date_route {
+	margin-top: 2px;
+	text-align: right;
+	font-weight: bold;
 }
 
 footer {
 	width: 100%;
-	height: 400px;
+	height: 200px;
 	background-color: #333333;
 	float: left;
 	color: #FFF;
