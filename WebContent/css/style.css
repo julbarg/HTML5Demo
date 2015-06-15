@@ -75,8 +75,62 @@ div.slogan {
 	width: 350px;
 	height: 100px;
 	margin-left: 100px;
-	margin-top: 180px;
+	margin-top: 100px;
 	display: inline-block;
+}
+
+div.resume_header{
+	padding: 15px;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 0px #000;
+	width: 480px;
+	height: 120px;
+	margin-left: 100px;
+	margin-top: 80px;
+	display: block;	
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+div.ciudad{
+	float: left;
+	width: 160px;
+	font-size: 20px;		
+}
+
+div.km{
+	float: left;
+	width: 160px;
+	font-size: 36px;
+	text-align: center;	
+}
+
+div.temperatura{
+	float: left;
+	width: 160px;
+	font-size: 36px;
+	text-align: center;	
+}
+
+div.temperatura_number{
+	text-align: right;
+	width: 100px;
+}
+
+div.temperatura_icon{
+	text-align: left;
+	width: 60px;
+}
+
+div.temperatura div{
+	float: left;	
+}
+
+div.resume_header h2{
+	font-size: 36px;
+	padding-bottom: 10px;
 }
 
 div.slogan h1 {
@@ -88,8 +142,25 @@ div.slogan h2 {
 	line-height: 20px;
 }
 
+div.social{
+	padding: 15px;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 0px #000;
+	width: 480px;
+	height: 120px;
+	margin-left: 100px;
+	margin-top: 20px;
+	display: block;
+}
+
+div.social img{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 div.contenedor {
 	width: 100%;
+	padding-bottom: 50px;
 }
 
 div.routes {
@@ -98,10 +169,7 @@ div.routes {
 	text-align: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-attachment: fixed;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
+	background-attachment: fixed;	
 }
 
 div.table {
@@ -126,17 +194,33 @@ div.table>div>div {
 div.route {
 	width: 300px;
 	height: 410px;
-	background-color: blue;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding: 0;
+	margin: 0;
+	opacity: 0.9;
+	background-size: 400px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	transition:all 0.5s ;
+    -webkit-transition:all 0.5s ;
+    -o-transition:all 0.5s ;
+    -moz-transition:all 0.5s ;
+  	
 }
 
-div.route div.img_route {
-	height: 240px;
+div.route:hover{
+	-webkit-animation: animatedBackground 0.5s;
+	-moz-animation: animatedBackground 0.5s;
+	animation: animatedBackground 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;	
+	background-size: 500px;	
 }
 
 div.route div.description_route {
 	background-color: white;
+	width: 271px;
 	height: 160px;
 	color: rgba(153, 153, 153, 0.8);
 	text-align: justify;
@@ -148,12 +232,205 @@ div.route div.description_route p.date_route {
 	margin-top: 2px;
 	text-align: right;
 	font-weight: bold;
+	font-size: 11px;	
+}
+
+div.route div.img_route {
+	height: 240px;	
+}
+
+div.routes p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p.cities {
+	font-weight: bold;
+	font-size: 13px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+p.intro {
+	font-size: 13px;
+}
+
+div.where{
+	background-image: url('../img/mountain.jpg');
+	background-size: cover;	
+	height: 670px;
+	-webkit-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+}
+
+div#map-canvas {
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CCC;
+    position: relative;
+    top:50px;
+    opacity:0.8;
+    -webkit-box-shadow: 10px 10px 15px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 15px 2px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 15px 2px rgba(0,0,0,0.75);
+}
+
+div.where h1{
+	text-align: center;
+	font-size: 70px;
+	padding-top: 20px;
+	color: #535353;		
+}
+
+div.reflexion{
+	height: 530px;
+}
+
+div.message {
+    width: 850px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:100px;    
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 2px #000;
+    font-family: 'Chau Philomene One', sans-serif;
 }
 
 footer {
-	width: 100%;
-	height: 200px;
+	width: 1180px;
+	height: 300px;
 	background-color: #333333;
 	float: left;
 	color: #FFF;
+	padding: 50px;
+	-webkit-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.75);
+}
+
+div.footer{
+	float:left;
+	width:350px;
+	margin:0 20px;
+}
+div.footer>h3{
+	text-shadow:initial;
+	font-size:24px;
+}
+p.descripcion_footer{
+	font-size:20px;
+}
+
+ul.grupo_mapa_sitio{
+	position: relative;
+	list-style: none;
+	margin-left: 0px;
+}
+
+li.link_mapa_sitio{
+	margin-bottom: 10px;
+	padding-left: 25px;
+	line-height: 20px;
+	padding-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	font-size:14px;
+	
+}
+
+input.contacto{
+	background-color:#333;
+	color:#F2F2F2;
+	width:320px;
+	height:25px;
+	margin-bottom:20px;
+	padding:5px;
+	border-color: #535353;
+  	border-width: 1px;
+}
+
+textarea.contacto_mensaje{
+	background-color:#333;
+	color:#F2F2F2;
+	width:320px;
+	height:75px;
+	margin-bottom:20px;
+	padding:5px;
+	vertical-align:text-top;
+	border-color: #535353;
+  	border-width: 1px;
+}
+
+button.boton_enviar{
+	width:100px;
+	height:25px;
+	background-color:#7ea6b5;
+	border:none;
+	font-size:18px;
+	color:#F2F2F2;
+}
+
+div.social_footer img{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+@-webkit-keyframes animatedBackground {
+	0% {
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+		transform: scale(1, 1)
+		
+	}
+	100% {
+		-webkit-transform: scale(1.05, 1.05);
+		-moz-transform: scale(1.05, 1.05);
+		-ms-transform: scale(1.05, 1.05);
+		-o-transform: scale(1.05, 1.05);
+		transform: scale(1.05, 1.05);		
+	}
+}
+	
+	
+@-moz-keyframes animatedBackground {
+	0% {
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+		transform: scale(1, 1)
+	}
+	100% {
+		-webkit-transform: scale(1.05, 1.05);
+		-moz-transform: scale(1.05, 1.05);
+		-ms-transform: scale(1.05, 1.05);
+		-o-transform: scale(1.05, 1.05);
+		transform: scale(1.05, 1.05);		
+	}
+}
+
+@keyframes animatedBackground {
+	0% {
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+		transform: scale(1, 1)
+	}
+	100% {
+		-webkit-transform: scale(1.05, 1.05);
+		-moz-transform: scale(1.05, 1.05);
+		-ms-transform: scale(1.05, 1.05);
+		-o-transform: scale(1.05, 1.05);
+		transform: scale(1.05, 1.05);		
+	}
 }
